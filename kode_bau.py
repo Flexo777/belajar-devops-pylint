@@ -1,9 +1,4 @@
-```python
-x = 10
-
-
 def bad_function_name(a, b, c, d, e, f):
-    """Process the given values."""
     local_value = 1
     zero = 0
 
@@ -15,10 +10,9 @@ def bad_function_name(a, b, c, d, e, f):
                     result = e[0] + f + local_value + zero
                     print(result)
                 except (IndexError, TypeError):
-                    return None
+                    pass
     else:
         return None
 
 
 bad_function_name(True, False, None, 1, [2], 3)
-```
